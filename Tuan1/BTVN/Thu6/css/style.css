@@ -1,0 +1,127 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 800px;
+    width: 1100px;
+    box-shadow: 0px 3px 5px 2px #888888;
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.wrapper > div {
+    float: left;
+    display: inline-block;
+    position: relative;
+}
+
+.wrapper-info {
+    height: 100%;
+    width: 40%;
+    border: none;
+    background-image: linear-gradient(to bottom right, #b78fe8, #705bd0);
+}
+
+.wrapper-login {
+    font-size: 20px;
+    font-family: Zen+Antique;
+    height: 100%;
+    width: 60%;
+    border: none;
+    padding: 70px 50px;
+    font-weight: bold;
+}
+
+.wrapper-input {
+    position: relative;
+    margin-top: 30px;
+    height: 65%;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.input-login {
+    position: relative;
+    height: 30%;
+    margin-bottom: 10px;
+
+}
+
+.input-login > input {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 17px;
+    width: 100%;
+}
+
+.wrapper-checkbox {
+    font-size: 15px;
+    position: relative;
+    margin-top: 0px;
+    height: 10%;
+}
+
+.wrapper-checkbox input[type=checkbox] {
+    transform: scale(2);
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.wrapper-button {
+    border: none;
+    position: relative;
+    height: 10%;
+    padding: 10px;
+    width: 65%;
+    color: white;
+    background-color: #6e59ce;
+    border-radius: 5px;
+    font-size: 15px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    cursor: pointer;
+}
+
+.wrapper-button #hover {
+    background-color: #999933;
+}
+.wrapper-info-list {
+    position: relative;
+    height: 60%;
+    width: 65%;
+    border: none;
+    margin-top: 50px;
+    margin-left: 40px;
+    padding: 20px 0px 20px 0px;
+    color: white;
+}
+
+.info-detail {
+    margin-top: 15px;
+    height: 33%;
+    width: 100%;
+}
+
+.info-detail > h4 {
+    font-size: 18px;
+    margin: 5px;
+}
+
+.info-detail >h5 {
+    font-size: 15px;
+    font-weight: normal;
+    margin: 5px;
+}
+
+.info-detail > i {
+    margin: 5px;
+    cursor: pointer;
+}
