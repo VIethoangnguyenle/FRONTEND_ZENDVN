@@ -93,6 +93,11 @@
 .wrapper-button #hover {
     background-color: #999933;
 }
+
+.wrapper-button {
+    cursor: pointer;
+}
+
 .wrapper-info-list {
     position: relative;
     height: 60%;
