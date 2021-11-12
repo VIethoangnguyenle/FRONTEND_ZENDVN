@@ -40,9 +40,13 @@
     height: auto;
     width: auto;
     padding: 20px;
+    cursor: pointer;
     border: white 1px solid;
 }
 
+.button #hover{
+    background-color: purple;
+}
 
 @media screen and (max-width: 1800px) {
     .wrapper-info > h1, h2, button {
