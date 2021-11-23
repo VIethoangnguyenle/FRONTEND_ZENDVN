@@ -63,3 +63,8 @@
 .right > li:hover {
     cursor: pointer;
 }
+
+main {
+    background-color: transparent;
+    text-align: center;
+}
