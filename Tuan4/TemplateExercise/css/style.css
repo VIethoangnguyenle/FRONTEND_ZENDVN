@@ -8,6 +8,10 @@ ul li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .body {
     width: 1920px;
 }
@@ -16,143 +20,331 @@ ul li {
         width: 100%;
     }
 
-    .wrapperFirst::after {
-        content: '';
-        background-image: url('../image/Hawk.png');
-        background-size: cover;
-        height: 100%;
-        width: 100%;
-        opacity: 0.2;
-    }
-
-    .wrapperFirst {
-        flex-direction: column;
-        padding: 5px;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to bottom, rgb(244, 140, 130), rgb(252,225,137));
-        display: flex;
-        align-items: center;
-    }
-
-        /* HEADER */
-        .wrapperFirst header {
-            display: flex;
-            position: absolute;
-            width: 1200px;
-            padding: 30px;
-            justify-content:space-between;
-            font-family: 'Montserrat';
-        }
-
-            .wrapperFirst header span {
-                font-size: 30px;
-                color: white;
-                font-weight: bold;
-            }
-
-            .wrapperFirst header ul {
-                display: flex;
-                width: 620px;
-                justify-content: space-between;
-                color: white;
-                font-weight: bold;
-                font-size: 14px;
-            }
-
-            .wrapperFirst header ul li {
-                display: flex;
-                align-items: center;
-            }
-
-            .wrapperFirst header ul li a{
-                display: flex;
-                text-decoration: none;
-                align-items: center;
-                color: white;
-            }
-
-            .wrapperFirst header ul li a:hover {
-                background-color: khaki;
-                cursor: pointer;
-            }
-        
-        /* MAIN */
-        .wrapperFirst main {
-            position: absolute;
-            display: flex;
+        .wrapper .wrapperFirst::after {
+            content: '';
+            background-image: url('../image/Hawk.png');
+            background-size: cover;
+            height: 100%;
             width: 100%;
-            height: fit-content;
-            flex-direction: column;
-            align-items: center;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            opacity: 0.2;
         }
 
-            .wrapperFirst main :nth-child(1) {
-                text-align: center;
-                width: fit-content;
+        .wrapper .wrapperFirst {
+            flex-direction: column;
+            padding: 5px;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgb(244, 140, 130), rgb(252,225,137));
+            display: flex;
+            align-items: center;
+        }
+
+            /* HEADER */
+            .wrapper .wrapperFirst header {
+                display: flex;
+                position: absolute;
+                width: 1200px;
                 padding: 30px;
-                font-size: 60px;
-                color: white;
+                justify-content:space-between;
+                font-family: 'Montserrat';
+            }
+
+                .wrapper .wrapperFirst header span {
+                    font-size: 30px;
+                    color: white;
+                    font-weight: bold;
+                }
+
+                .wrapper .wrapperFirst header ul {
+                    display: flex;
+                    width: 620px;
+                    justify-content: space-between;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+
+                .wrapper .wrapperFirst header ul li {
+                    display: flex;
+                    align-items: center;
+                }
+
+                .wrapper .wrapperFirst header ul li a{
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                }
+
+                .wrapper .wrapperFirst header ul li a:hover {
+                    background-color: khaki;
+                    cursor: pointer;
+                }
+            
+            /* MAIN */
+            .wrapper .wrapperFirst main {
+                position: absolute;
+                display: flex;
+                width: 100%;
+                height: fit-content;
+                flex-direction: column;
+                align-items: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+                .wrapper .wrapperFirst main :nth-child(1) {
+                    text-align: center;
+                    width: fit-content;
+                    padding: 30px;
+                    font-size: 60px;
+                    color: white;
+                    font-family: 'Kaushan Script';
+                }
+
+                .wrapper .wrapperFirst main :nth-child(2){
+                    width: 800px;
+                    height: fit-content;
+                    font-size: 115px;
+                    text-align: center;
+                    color: white;
+                    font-weight: bold;
+                    font-family: 'Montserrat';
+                    padding: 10px;
+                    left: 50%;
+                    flex: 1;
+                }
+
+                .wrapper .wrapperFirst main .rectangle {
+                    width: 60px;
+                    height: 4px;
+                    background-color: white;
+                }
+
+                .wrapper .wrapperFirst main button {
+                    margin-top: 50px;
+                    width: 160px;
+                    height: 40px;
+                    border: 4px solid white;
+                    color: white;
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    text-align: center;
+                    vertical-align: middle;
+                    background-color: transparent;
+                    font-weight: bold;
+                }
+
+                .wrapper .wrapperFirst main button:hover {
+                    background-color: plum;
+                    cursor: pointer;
+                }
+
+            /* FOOTER */
+            
+            .wrapper .wrapperFirst footer {
+                position: absolute;
+                display: flex;
+                width: 1200px;
+                bottom: 0;
+                padding: 30px;
+                font-family: 'Montserrat';
+            }
+
+                .wrapper .wrapperFirst footer ul {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                    .wrapper .wrapperFirst footer ul li {
+
+                    }
+                        .wrapper .wrapperFirst footer ul li a{
+                            color: white;
+                        }
+
+                        
+                        .wrapper .wrapperFirst footer ul li .slideFooter{
+                            width: 280px;
+                            height: 4px;
+                            background-color: white;
+                            display: block;
+                            margin-bottom: 25px;
+                        }
+                        
+                        .wrapper .wrapperFirst footer ul li :nth-child(2){
+                            font-size: 20px;
+                            font-weight: bold;
+                            font-family: 'Montserrat';
+                        }
+    
+    .wrapper .aboutUs {
+        height: 750px;
+        width: 100%;
+        background-color: white;
+    }
+        .wrapper .aboutUs .aboutUsText {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin-top: 85px;
+        }
+
+            .wrapper .aboutUs .aboutUsText :nth-child(1) {
+                padding: 5px;
+                font-size: 24px;
                 font-family: 'Kaushan Script';
             }
 
-            .wrapperFirst main :nth-child(2){
-                width: 800px;
-                height: fit-content;
-                font-size: 115px;
-                text-align: center;
-                color: white;
-                font-weight: bold;
-                font-family: 'Montserrat';
+            .wrapper .aboutUs .aboutUsText :nth-child(2) {
                 padding: 10px;
-                left: 50%;
-                flex: 1;
+                font-size: 30px;
+                font-family: 'Montserrat';
+                font-weight: bold;
             }
 
-            .wrapperFirst main .rectangle {
+            .wrapper .aboutUs .aboutUsText :nth-child(3) {
                 width: 60px;
                 height: 4px;
-                background-color: white;
+                margin-top: 30px;
+                background-color: rgb(243, 129, 129);
             }
 
-            .wrapperFirst main button {
-                margin-top: 50px;
-                width: 160px;
-                height: 40px;
-                border: 4px solid white;
-                color: white;
-                font-family: 'Montserrat';
-                font-size: 14px;
+            .wrapper .aboutUs .aboutUsText :nth-child(4) {
+                width: 50%;
+                font-family: 'roboto';
+                padding: 10px;
+                margin-top: 40px;
+                font-size: 15px;
                 text-align: center;
-                vertical-align: middle;
-                background-color: transparent;
-                font-weight: bold;
             }
-
-            .wrapperFirst main button :hover {
-                background-color: plum;
-                cursor: pointer;
-            }
-
-        /* FOOTER */
-        
-        .wrapperFirst footer {
-            position: absolute;
+    
+        .wrapper .aboutUs .aboutUsImage {
             display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            height: 250px;
             width: 1200px;
-            bottom: 0;
-            padding: 30px;
-            justify-content:space-between;
-            align-items:flex-start;
-            font-family: 'Montserrat';
+            margin: 80px auto;
         }
 
-        .wrapperFirst footer ul {
+            .wrapper .aboutUs .aboutUsImage >img {
+                width: 380px;
+            }
+
+            .wrapper .aboutUs .aboutUsImage :nth-child(1)::after {
+                background-color: rgb(149, 225, 210);
+                content: '';
+                opacity: 1;
+            }
+    
+    .wrapper .facts {
+        height: 270px;
+        width: 100%;
+        background-color: rgb(149, 225, 210);
+    }
+        .wrapper .facts .factInfo {
+            margin: auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            width: 1200px;
+            height: 100%;
         }
+
+        .wrapper .facts .factInfo li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Montserrat';
+            font-weight: bold;
+            color: white;
+        }
+
+            .wrapper .facts .factInfo li .numberFact{
+                font-size: 72px;
+            }
+            .wrapper .facts .factInfo li .textFact{
+                font-size: 14px;
+            }
+    
+    
+    .wrapper .weWorkWith {
+        height: 650px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .wrapper .weWorkWith header {
+            padding: 10px;
+            margin-top: 80px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .wrapper .weWorkWith header :nth-child(1) {
+                padding: 5px;
+                font-size: 24px;
+                font-family: 'Kaushan Script';
+            }
+
+            .wrapper .weWorkWith header :nth-child(2) {
+                padding: 10px;
+                font-size: 30px;
+                font-family: 'Montserrat';
+                font-weight: bold;
+            }
+
+            .wrapper .weWorkWith header .rectangle {
+                margin-top: 40px;
+                width: 60px;
+                height: 4px;
+                background-color: rgb(243, 129, 129);
+            }
+        
+        .wrapper .weWorkWith main  {
+            display: flex;
+            width: 1200px;
+            flex-wrap: wrap;
+            margin-top: 45px;
+            justify-content: space-between;
+        }
+
+            .wrapper .weWorkWith main .weWorkWithInfo {
+                display: flex;
+                width: 400px;
+                height: 170px;
+                padding: 25px;
+            }
+
+            .wrapper .weWorkWith main .weWorkWithInfo :nth-child(1) {
+                width: 20%;
+                padding: 0px 15px;
+                height: fit-content;
+            }
+
+            .wrapper .weWorkWith main .weWorkWithInfo .textInfo {
+                display: flex;
+                flex-direction: column;
+            }
+                .wrapper .weWorkWith main .weWorkWithInfo .textInfo :nth-child(1){
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    padding: 0px;
+                }
+
+                .wrapper .weWorkWith main .weWorkWithInfo .textInfo :nth-child(2){
+                    font-family: 'Roboto';
+                    font-size: 15px;
+                    margin-top: 10px;
+                }
+
 
