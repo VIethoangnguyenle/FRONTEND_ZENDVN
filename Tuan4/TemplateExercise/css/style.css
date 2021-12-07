@@ -20,7 +20,7 @@ a {
         width: 100%;
     }
 
-        .wrapper .wrapperFirst::after {
+        .wrapper .wrapperFirst::before {
             content: '';
             background-image: url('../image/Hawk.png');
             background-size: cover;
@@ -40,7 +40,7 @@ a {
         }
 
             /* HEADER */
-            .wrapper .wrapperFirst header {
+             .wrapperFirst header {
                 display: flex;
                 position: absolute;
                 width: 1200px;
@@ -49,13 +49,13 @@ a {
                 font-family: 'Montserrat';
             }
 
-                .wrapper .wrapperFirst header span {
+                 .wrapperFirst header span {
                     font-size: 30px;
                     color: white;
                     font-weight: bold;
                 }
 
-                .wrapper .wrapperFirst header ul {
+                 .wrapperFirst header ul {
                     display: flex;
                     width: 620px;
                     justify-content: space-between;
@@ -64,24 +64,42 @@ a {
                     font-size: 14px;
                 }
 
-                .wrapper .wrapperFirst header ul li {
+                 .wrapperFirst header ul li {
                     display: flex;
                     align-items: center;
+                    flex-direction: column;
                 }
 
-                .wrapper .wrapperFirst header ul li a{
+                 .wrapperFirst header ul li a{
                     display: flex;
                     align-items: center;
                     color: white;
                 }
 
-                .wrapper .wrapperFirst header ul li a:hover {
-                    background-color: khaki;
+                     .wrapperFirst header ul li:after{
+                        display: block;
+                        content: '';
+                        width: 0;
+                        height: 2px;
+                        margin: 3px;
+                        background-color: rgb(252, 227, 138);
+                        
+                    }
+                    
+                     .wrapperFirst header ul li:hover:after{
+                        display: block;
+                        width: 100%;
+                        background-color: rgb(252, 227, 138);
+                        transition: all 0.5s linear;
+                    }
+
+                 .wrapperFirst header ul li a:hover {
+                    color: rgb(252, 227, 138);
                     cursor: pointer;
                 }
-            
+                
             /* MAIN */
-            .wrapper .wrapperFirst main {
+             .wrapperFirst main {
                 position: absolute;
                 display: flex;
                 width: 100%;
@@ -93,7 +111,7 @@ a {
                 transform: translate(-50%, -50%);
             }
 
-                .wrapper .wrapperFirst main :nth-child(1) {
+                 .wrapperFirst main :nth-child(1) {
                     text-align: center;
                     width: fit-content;
                     padding: 30px;
@@ -102,7 +120,7 @@ a {
                     font-family: 'Kaushan Script';
                 }
 
-                .wrapper .wrapperFirst main :nth-child(2){
+                 .wrapperFirst main :nth-child(2){
                     width: 800px;
                     height: fit-content;
                     font-size: 115px;
@@ -115,13 +133,13 @@ a {
                     flex: 1;
                 }
 
-                .wrapper .wrapperFirst main .rectangle {
+                 .wrapperFirst main .rectangle {
                     width: 60px;
                     height: 4px;
                     background-color: white;
                 }
 
-                .wrapper .wrapperFirst main button {
+                 .wrapperFirst main button {
                     margin-top: 50px;
                     width: 160px;
                     height: 40px;
@@ -133,16 +151,19 @@ a {
                     vertical-align: middle;
                     background-color: transparent;
                     font-weight: bold;
+                    cursor: pointer;
+                    z-index: 100;
                 }
 
-                .wrapper .wrapperFirst main button:hover {
+                 .wrapperFirst main button:hover {
                     background-color: plum;
                     cursor: pointer;
+                    transition: all linear 0.4s;
                 }
 
             /* FOOTER */
             
-            .wrapper .wrapperFirst footer {
+             .wrapperFirst footer {
                 position: absolute;
                 display: flex;
                 width: 1200px;
@@ -151,21 +172,21 @@ a {
                 font-family: 'Montserrat';
             }
 
-                .wrapper .wrapperFirst footer ul {
+                 .wrapperFirst footer ul {
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
                 }
 
-                    .wrapper .wrapperFirst footer ul li {
+                     .wrapperFirst footer ul li {
 
                     }
-                        .wrapper .wrapperFirst footer ul li a{
+                         .wrapperFirst footer ul li a{
                             color: white;
                         }
 
                         
-                        .wrapper .wrapperFirst footer ul li .slideFooter{
+                         .wrapperFirst footer ul li .slideFooter{
                             width: 280px;
                             height: 4px;
                             background-color: white;
@@ -173,7 +194,7 @@ a {
                             margin-bottom: 25px;
                         }
                         
-                        .wrapper .wrapperFirst footer ul li :nth-child(2){
+                         .wrapperFirst footer ul li :nth-child(2){
                             font-size: 20px;
                             font-weight: bold;
                             font-family: 'Montserrat';
@@ -184,7 +205,7 @@ a {
         width: 100%;
         background-color: white;
     }
-        .wrapper .aboutUs .aboutUsText {
+         .aboutUs .aboutUsText {
             display: flex;
             flex-direction: column;
             width: 100%;
@@ -192,27 +213,27 @@ a {
             margin-top: 85px;
         }
 
-            .wrapper .aboutUs .aboutUsText :nth-child(1) {
+             .aboutUs .aboutUsText :nth-child(1) {
                 padding: 5px;
                 font-size: 24px;
                 font-family: 'Kaushan Script';
             }
 
-            .wrapper .aboutUs .aboutUsText :nth-child(2) {
+             .aboutUs .aboutUsText :nth-child(2) {
                 padding: 10px;
                 font-size: 30px;
                 font-family: 'Montserrat';
                 font-weight: bold;
             }
 
-            .wrapper .aboutUs .aboutUsText :nth-child(3) {
+             .aboutUs .aboutUsText :nth-child(3) {
                 width: 60px;
                 height: 4px;
                 margin-top: 30px;
                 background-color: rgb(243, 129, 129);
             }
 
-            .wrapper .aboutUs .aboutUsText :nth-child(4) {
+             .aboutUs .aboutUsText :nth-child(4) {
                 width: 50%;
                 font-family: 'roboto';
                 padding: 10px;
@@ -221,7 +242,7 @@ a {
                 text-align: center;
             }
     
-        .wrapper .aboutUs .aboutUsImage {
+         .aboutUs .aboutUsImage {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -231,11 +252,11 @@ a {
             margin: 80px auto;
         }
 
-            .wrapper .aboutUs .aboutUsImage >img {
+             .aboutUs .aboutUsImage >img {
                 width: 380px;
             }
 
-            .wrapper .aboutUs .aboutUsImage :nth-child(1)::after {
+             .aboutUs .aboutUsImage :nth-child(1)::after {
                 background-color: rgb(149, 225, 210);
                 content: '';
                 opacity: 1;
@@ -246,7 +267,7 @@ a {
         width: 100%;
         background-color: rgb(149, 225, 210);
     }
-        .wrapper .facts .factInfo {
+         .facts .factInfo {
             margin: auto;
             display: flex;
             align-items: center;
@@ -255,7 +276,7 @@ a {
             height: 100%;
         }
 
-        .wrapper .facts .factInfo li {
+         .facts .factInfo li {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -264,10 +285,10 @@ a {
             color: white;
         }
 
-            .wrapper .facts .factInfo li .numberFact{
+             .facts .factInfo li .numberFact{
                 font-size: 72px;
             }
-            .wrapper .facts .factInfo li .textFact{
+             .facts .factInfo li .textFact{
                 font-size: 14px;
             }
     
@@ -280,7 +301,7 @@ a {
         align-items: center;
     }
 
-        .wrapper .weWorkWith header {
+         .weWorkWith header {
             padding: 10px;
             margin-top: 80px;
             display: flex;
@@ -288,27 +309,27 @@ a {
             align-items: center;
         }
 
-            .wrapper .weWorkWith header :nth-child(1) {
+             .weWorkWith header :nth-child(1) {
                 padding: 5px;
                 font-size: 24px;
                 font-family: 'Kaushan Script';
             }
 
-            .wrapper .weWorkWith header :nth-child(2) {
+             .weWorkWith header :nth-child(2) {
                 padding: 10px;
                 font-size: 30px;
                 font-family: 'Montserrat';
                 font-weight: bold;
             }
 
-            .wrapper .weWorkWith header .rectangle {
+             .weWorkWith header .rectangle {
                 margin-top: 40px;
                 width: 60px;
                 height: 4px;
                 background-color: rgb(243, 129, 129);
             }
         
-        .wrapper .weWorkWith main  {
+         .weWorkWith main  {
             display: flex;
             width: 1200px;
             flex-wrap: wrap;
@@ -316,24 +337,24 @@ a {
             justify-content: space-between;
         }
 
-            .wrapper .weWorkWith main .weWorkWithInfo {
+             .weWorkWith main .weWorkWithInfo {
                 display: flex;
                 width: 400px;
                 height: 170px;
                 padding: 25px;
             }
 
-            .wrapper .weWorkWith main .weWorkWithInfo :nth-child(1) {
+             .weWorkWith main .weWorkWithInfo :nth-child(1) {
                 width: 20%;
                 padding: 0px 15px;
                 height: fit-content;
             }
 
-            .wrapper .weWorkWith main .weWorkWithInfo .textInfo {
+             .weWorkWith main .weWorkWithInfo .textInfo {
                 display: flex;
                 flex-direction: column;
             }
-                .wrapper .weWorkWith main .weWorkWithInfo .textInfo :nth-child(1){
+                 .weWorkWith main .weWorkWithInfo .textInfo :nth-child(1){
                     font-family: 'Montserrat';
                     font-size: 14px;
                     font-weight: bold;
@@ -341,10 +362,529 @@ a {
                     padding: 0px;
                 }
 
-                .wrapper .weWorkWith main .weWorkWithInfo .textInfo :nth-child(2){
+                 .weWorkWith main .weWorkWithInfo .textInfo :nth-child(2){
                     font-family: 'Roboto';
                     font-size: 15px;
                     margin-top: 10px;
                 }
+
+        .wrapper .feauture {
+            width: 100%;
+            height: 850px;
+            background-image: url('../image/Layer\ 45.png');
+            background-size: cover;
+            box-shadow: inset 0 0 0 2000px #000000ab;
+
+        }
+
+             .feauture .feautureInfo {
+                width: 100%;
+                height: 100%;
+                
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+                 .feauture .feautureInfo>:nth-child(1){
+                    display: block;
+                    font-size: 24px;
+                    font-family: 'Kaushan Script';
+                    padding: 10px;
+                    margin-top: 100px;
+                }
+
+                 .feauture .feautureInfo>:nth-child(2){
+                    display: block;
+                    font-size: 30px;
+                    font-family: 'Montserrat';
+                    padding: 10px;
+                }
+
+                .feautureInfoImage {
+                    height: 100%;
+                    position: relative;
+                }
+
+                .feautureInfoImage>:nth-child(1) {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .feautureInfoImage>:nth-child(2) {
+                    position: absolute;
+                    left: 100px;
+                    bottom: -100px;
+                }   
+        
+        .wrapper .whatWeDo {
+            display: flex;
+            width: 100%; 
+            height: 900px;
+            background-color: white;
+            flex-direction: column;
+            align-items: center;
+        }
+
+             .whatWeDo .whatWeDoContent {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 950px;
+            }
+
+                 .whatWeDo .whatWeDoContent :nth-child(1){
+                    padding: 10px;
+                    margin-top: 100px;
+                    font-size: 24px;
+                    font-family: 'Kaushan Script';
+                }
+
+                 .whatWeDo .whatWeDoContent :nth-child(2){
+                    padding: 10px;
+                    font-size: 30px;
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                }
+
+                 .whatWeDo .whatWeDoContent :nth-child(3){
+                    margin-top: 40px;
+                    width: 60px;
+                    height: 4px;
+                    background-color: rgb(243, 129, 129);
+                }
+
+                 .whatWeDo .whatWeDoContent :nth-child(4){
+                    font-family: 'Roboto';
+                    font-size: 15px;
+                    text-align: center;
+                    padding: 10px;
+                    margin-top: 40px;
+                }
+
+             .whatWeDo .whatWeDoInfo {
+                margin-top: 40px;
+                display: flex;
+                flex-direction: row;
+                width: 1200px;
+                height: 380px;
+                align-items: flex-start;
+            }
+                
+                 .whatWeDo .whatWeDoInfo .info{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+        .wrapper .quote {
+            height: 290px;
+            width: 100%;
+            background-color: #f8f8f8;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+             .quote .chatFrame {
+                height: 150px;
+                width: 150px;
+                border: 4px rgb(150, 225, 213) solid;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 15px;
+            }
+                 .quote .chatFrame > :nth-child(1) {
+                    width: 50%;
+                    height: 50%;
+                    
+                }
+
+             .quote .quoteInfo {
+                padding: 5px;
+                width: 750px;
+                height: 150px;
+                font-family: 'Roboto';
+                font-size: 24px;
+                font-style: italic;
+                
+            }
+
+                 .quote .quoteInfo .rectangle13 {
+                    margin-top: 25px;
+                    width: 60px;
+                    height: 4px;
+                    background-color: #f38141;
+                    display: block;
+                }
+        
+        .wrapper .ourTeam {
+            width: 1200px;
+            height: 1050px;
+            margin: auto;
+        }
+             .ourTeam .ourTeamInfo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 90px;
+            }
+
+                 .ourTeam .ourTeamInfo > :nth-child(1) {
+                    font-family: 'Kaushan Script';
+                    font-size: 24px;
+                    font-weight: bold;
+                    padding: 10px;
+                }
+                
+                 .ourTeam .ourTeamInfo > :nth-child(2) {
+                    font-family: 'Montserrat';
+                    font-size: 30px;
+                    font-weight: bold;
+                    padding: 10px;
+                }
+
+                 .ourTeam .ourTeamInfo > :nth-child(3) {
+                    margin: 30px;
+                    width: 60px;
+                    height: 4px;
+                    background-color: #f38141;
+                }
+
+                 .ourTeam .ourTeamInfo > :nth-child(4) {
+                    font-size: 15px;
+                    font-family: 'Roboto';
+                    margin-top: 20px;
+                    text-align: center;
+                    width: 945px;
+                }
+
+             .ourTeam .ourTeamImage {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                overflow: hidden;
+                width: 1200px;
+
+                margin: 70px auto;
+            }
+        
+                 .ourTeam .ourTeamImage .ourTeamImageInfo {
+                    width: 380px;
+                    overflow: hidden;
+                }
+
+                 .ourTeam .ourTeamImage .ourTeamImageInfo > span {
+                    display: block;
+                    text-align: center;
+                    margin-top: 20px;
+                }
+
+                 .ourTeam .ourTeamImage .ourTeamImageInfo > :nth-child(1) {
+                    height: 475px;
+                }
+
+                 .ourTeam .ourTeamImage .ourTeamImageInfo > :nth-child(2) {
+                    font-family: 'Montserrat';
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                 .ourTeam .ourTeamImage .ourTeamImageInfo > :nth-child(3) {
+                    font-family: 'Roboto';
+                    font-size: 15px;
+                    
+                }
+        /* LOGOS */
+        
+        .wrapper .logos {
+            background-color: #f8f8f8;
+            width: 100%;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* WORK */
+        .wrapper .work {
+            display: flex;
+            width: 100%;
+            height: 1200px;
+            align-items: center;
+            flex-direction: column;
+        }
+
+             .work .workContent {
+                height: 35%;
+                width: 63%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 100px;
+            }
+
+                .work .workContent >:nth-child(1) {
+                    font-size: 24px;
+                    font-weight: bold;
+                    font-style: italic;
+                    font-family: 'Kaushan Script';
+                    padding: 10px;
+                }
+
+                .work .workContent >:nth-child(2) {
+                    font-size: 30px;
+                    font-weight: bold;
+                    font-family: 'Montserrat';
+                    padding: 10px;
+                }
+
+                .work .workContent >:nth-child(3) {
+                    width: 60px;
+                    height: 4px;
+                    background-color: #f38141;
+                    margin: 30px;
+                }
+
+                .work .workContent >:nth-child(4) {
+                    font-size: 15px;
+                    text-align: center;
+                    font-family: 'Montserrat';
+                }
+
+
+            .work .workImg {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 65%;
+                flex-wrap: wrap;
+            }
+
+                .work .workImg .workImgInfo {
+                    width: 25%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    overflow: hidden;
+                }
+                
+                .work .workImg .workImgInfo >img{
+                    height: 50%;
+                    display: inline-block;
+                    width: 100%;
+                }
+
+            .work .workImg > :nth-child(3){
+                height: 100%;
+                width: 25%;
+            }
+
+            .work .workImg > :nth-child(3) > img{
+                height: 100%
+            }
+
+
+        .wrapper .testinomial {
+            width: 100%;
+            height: 440px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .testinomial .testinomialWrap {
+                height: 250px;
+                display: flex;
+                flex-direction: row;
+                justify-content:space-between; 
+                width: 1200px;
+        
+            }
+
+                .testinomial .testinomialWrap .testinomialAva {
+                    width: 220px;
+                    height: 220px;
+                    border-radius: 110px;
+                    background-color: 555;
+                    overflow: hidden; 
+                    background-image: url("../image/Layer\ 36.png");
+                    background-position: center;
+                    padding: 5px;
+                }
+
+                .testinomial .testinomialWrap .testinomialAva > img {
+                    width: 100%;
+                    height: 100%; 
+                }
+
+            .testinomial .testinomialContent {
+                width: 980px;
+                padding: 30px;
+                margin-top: 20px;
+            }
+
+                .testinomial .testinomialContent > :nth-child(1) {
+                    font-size: 24px;
+                    font-family: 'Roboto';
+                    font-style: italic;
+                    display: block;
+                }
+
+                .testinomial .testinomialContent > :nth-child(2) {
+                    margin-top: 40px;
+                    width: 60px;
+                    height: 4px;
+                    background-color: #f38141;
+                    display: inline-block;
+                    
+                }
+
+                .testinomial .testinomialContent > :nth-child(3) {
+                    font-size: 24px;
+                    font-family: 'Kaushan Script';
+                }
+
+
+        .wrapper .whatPeopleSay {
+            position: relative;
+            width: 100%;
+            height: 830px;
+            background-image: url("../image/Layer\ 53.png");
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .wrapper .whatPeopleSay::after {
+            background-color: white;
+            opacity: 0.7;
+            content: "";
+            left: 0; right: 0;
+            top: 0; bottom: 0;
+            position: absolute;
+        }
+
+            .whatPeopleSay .whatPeopleSayContent {
+                display: flex;
+                margin: auto;
+                z-index: 1;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 40%;
+            }
+
+                .whatPeopleSay .whatPeopleSayContent > :nth-child(1) {
+                    font-size: 24px;
+                    font-family: 'Kaushan Script';
+                    font-weight: bold;
+                    padding: 10px;
+                }
+
+                .whatPeopleSay .whatPeopleSayContent > :nth-child(2) {
+                    font-size: 30px;
+                    font-family: 'Montserrat';
+                    font-weight: bold;
+                }
+
+                .whatPeopleSay .whatPeopleSayContent > :nth-child(3) {
+                    height: 4px;
+                    width: 60px;
+                    background-color: #f38141;
+                    margin-top: 60px;
+                }
+
+            .whatPeopleSay .whatPeopleSayInfo {
+                height: 60%;
+                width: 1200px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                z-index: 1;
+            }
+
+                .whatPeopleSay .whatPeopleSayInfo .commentInfo {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .whatPeopleSay .whatPeopleSayInfo >:nth-child(1) .avatar {
+                    width: 120px;
+                    height: 120px;
+                    background-image:url("../image/Layer\ 47.png");
+                    background-position: center top;
+                    border-radius: 60px;
+                }
+
+                .whatPeopleSay .whatPeopleSayInfo >:nth-child(2) .avatar {
+                    width: 120px;
+                    height: 120px;
+                    background-image:url("../image/Layer\ 49.png");
+                    background-position: center;
+                    border-radius: 60px;
+                }
+
+                .whatPeopleSay .whatPeopleSayInfo >:nth-child(3) .avatar {
+                    width: 120px;
+                    height: 120px;
+                    background-image:url("../image/Layer\ 50.png");
+                    background-position: center;
+                    border-radius: 60px;
+                }
+
+                .whatPeopleSay .whatPeopleSayInfo >:nth-child(4) .avatar {
+                    width: 120px;
+                    height: 120px;
+                    background-image:url("../image/Layer\ 51.png");
+                    background-position: 403px 492px;
+                    border-radius: 60px;
+                }
+                    .whatPeopleSayInfo .commentInfo .info {
+                        display: flex;
+                        flex-direction: column;
+                        flex: 1;
+                        padding: 10px;
+                    }
+
+                    .whatPeopleSayInfo .commentInfo .info >:nth-child(1) {
+                        font-family: "Montserrat";
+                        font-size: 14px;
+                        padding: 7px;
+                    }
+
+                    .whatPeopleSayInfo .commentInfo .info >:nth-child(2) {
+                        font-family: "Roboto";
+                        font-size: 15px;
+                        padding: 7px;
+                        font-style: italic;
+                    }
+
+                    .whatPeopleSayInfo .commentInfo .info >:nth-child(3) {
+                        height: 4px;
+                        width: 60px;
+                        background-color: #f38141;
+                        margin-left: 7px;
+                        margin-bottom: 7px;
+                    }
+
+                    .whatPeopleSayInfo .commentInfo .info >:nth-child(4) {
+                        font-family: "Roboto";
+                        font-size: 15px;
+                        padding: 7px;
+                        width: 80%;
+                    }
+
+            
+
+
+
 
 
